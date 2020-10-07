@@ -1,0 +1,37 @@
+.about{
+  padding: 71px 0 95px;
+  text-align: center;
+  background-color: #F6F6F6;
+  &__title{
+    font-size: 30px;
+    margin-bottom: 65px;
+  }
+  .block1{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .block2{
+    display: flex;
+    justify-content: center;
+  }
+  .block3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__block{
+    width: 246px;
+    img{
+      margin-bottom: 38px;
+    }
+    &_title{
+      margin-bottom: 25px;
+    }
+    .text{
+      font-size: 14px;
+      span{
+        color: #C70101;
+        text-decoration: underline;
+      }
+    }
+  }
+}

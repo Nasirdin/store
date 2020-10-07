@@ -1,0 +1,41 @@
+.slider{
+  padding: 108px 0 108px;
+  #slider{
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    .owl-stage-outer{
+      .owl-stage{
+        .owl-item{
+        }
+      }
+    }
+    .owl-nav{
+      .customNextBtn{
+        position: absolute;
+        top: 50%;
+        right: -88px;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        transition: .5s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+      .customPrevBtn{
+        position: absolute;
+        top: 50%;
+        left: -88px;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        transition: .5s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .owl-dots{
+      display: none;
+    }
+  }
+}

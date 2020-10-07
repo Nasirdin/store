@@ -1,0 +1,53 @@
+.home{
+  padding: 165px 0 93px;
+  background: url("../img/home/home-bg.jpeg") center/cover;
+  color: #fff;
+  text-align: right;
+  &__title{
+    font-size: 42px;
+    margin-bottom: 17px;
+  }
+  &__subtitle{
+    font-size: 24px;
+    margin-bottom: 66px;
+  }
+  .service-block{
+    max-width: 460px;
+    margin-left: auto;
+    margin-bottom: 66px;
+    .wrapper{
+      text-align: center;
+      img{
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+  &__btn{
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 44px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 4px;
+    background: #C70101;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    transition: .5s;
+    &:hover{
+      background-color: #fff;
+      color: #9c9c9c;
+    }
+  }
+  .more{
+    a{
+      color: #fff;
+      font-family: 'Museo Sans Cyrl 500', sans-serif;
+      transition: .5s;
+      &:hover{
+        color: #C70101;
+      }
+    }
+  }
+}

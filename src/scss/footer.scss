@@ -1,0 +1,53 @@
+.footer{
+  position: relative;
+  &__box{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 59px 0 25px;
+    text-align: center;
+    background-color: #C70101;
+    width: 461px;
+    a{
+      display: inline-block;
+      color: #fff;
+      font-family: 'Museo Sans Cyrl 300', sans-serif;
+      font-size: 20px;
+      margin-bottom: 36px;
+      text-decoration: none;
+      transition: .5s;
+      &:hover{
+        color: #9c9c9c;
+      }
+    }
+    .icon{
+      display: flex;
+      justify-content: center;
+      .before{
+        margin-left: 25px;
+        display: block;
+        width: 51px;
+        height: 51px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        &:nth-child(1){
+          margin-left: 0;
+        }
+        &:hover{
+          transform: rotate(360deg);
+
+        }
+      }
+      .icons{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
