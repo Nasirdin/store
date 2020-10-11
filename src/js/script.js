@@ -44,7 +44,16 @@ $(document).ready(function () {
     });
 
     $('.close-modal').on('click', function () {
-        $('.overlay, .modal, .buy-modal').fadeOut('slow');
+        $('.overlay, .modal, .buy-modal, .modal-thanks').fadeOut('slow');
+    });
+
+    $('#thanks').on('click', function () {
+        $('.overlay, .modal-thanks').fadeIn('slow')
+    });
+
+    $('#product').on('click', function () {
+        $('.overlay, .modal-thanks').fadeIn('slow');
+        $('.buy-modal').fadeOut('slow')
     });
 
     //tel mask

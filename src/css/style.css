@@ -499,7 +499,7 @@ body {
   display: none;
   z-index: 1;
 }
-.overlay .modal, .overlay .modal-call {
+.overlay .modal, .overlay .modal-call, .overlay .modal-thanks {
   position: absolute;
   width: 390px;
   height: 420px;
@@ -510,7 +510,7 @@ body {
   padding: 45px;
   display: none;
 }
-.overlay .modal .close-modal, .overlay .modal-call .close-modal {
+.overlay .modal .close-modal, .overlay .modal-call .close-modal, .overlay .modal-thanks .close-modal {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -518,7 +518,7 @@ body {
   right: -40px;
   cursor: pointer;
 }
-.overlay .modal .close-modal:before, .overlay .modal-call .close-modal:before {
+.overlay .modal .close-modal:before, .overlay .modal-call .close-modal:before, .overlay .modal-thanks .close-modal:before {
   content: "";
   position: absolute;
   width: 28px;
@@ -528,7 +528,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.overlay .modal .close-modal:after, .overlay .modal-call .close-modal:after {
+.overlay .modal .close-modal:after, .overlay .modal-call .close-modal:after, .overlay .modal-thanks .close-modal:after {
   content: "";
   position: absolute;
   width: 28px;
@@ -537,6 +537,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.overlay .modal-thanks {
+  height: 140px;
+  text-align: center;
+  background-color: #fff;
 }
 .overlay .buy-modal {
   position: absolute;
