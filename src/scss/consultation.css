@@ -1,0 +1,38 @@
+.consultation {
+  padding: 100px 0 92px;
+  background: url("../img/consultation/bg.jpeg") center/cover; }
+  .consultation__title {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 80px; }
+  .consultation .form__text {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Museo Sans Cyrl 500', sans-serif;
+    margin-bottom: 35px; }
+  .consultation .form label {
+    display: flex;
+    flex-direction: column; }
+    .consultation .form label input {
+      width: 301px;
+      height: 51px;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      padding: 0 15px;
+      margin-bottom: 14px; }
+      .consultation .form label input:last-child {
+        background-color: #C70101;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0;
+        transition: .5s; }
+        .consultation .form label input:last-child:hover {
+          background-color: #fff;
+          color: #9c9c9c; }
+
+/*# sourceMappingURL=consultation.css.map */

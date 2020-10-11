@@ -1,0 +1,45 @@
+.footer {
+  position: relative; }
+  .footer__box {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 59px 0 25px;
+    text-align: center;
+    background-color: #C70101;
+    width: 461px; }
+    .footer__box a {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Museo Sans Cyrl 300', sans-serif;
+      font-size: 20px;
+      margin-bottom: 36px;
+      text-decoration: none;
+      transition: .5s; }
+      .footer__box a:hover {
+        color: #9c9c9c; }
+    .footer__box .icon {
+      display: flex;
+      justify-content: center; }
+      .footer__box .icon .before {
+        margin-left: 25px;
+        display: block;
+        width: 51px;
+        height: 51px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative; }
+        .footer__box .icon .before:nth-child(1) {
+          margin-left: 0; }
+        .footer__box .icon .before:hover {
+          transform: rotate(360deg); }
+      .footer__box .icon .icons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=footer.css.map */

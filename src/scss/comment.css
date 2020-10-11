@@ -1,0 +1,37 @@
+.comment {
+  padding: 80px 0 73px; }
+  .comment__title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  .comment__block .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 50px;
+    margin-top: 50px; }
+    .comment__block .box:nth-child(1) {
+      margin-top: 0; }
+    .comment__block .box__icon {
+      width: 171px;
+      height: 171px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+    .comment__block .box__text {
+      margin-left: 60px; }
+      .comment__block .box__text .title {
+        font-size: 18px;
+        margin-bottom: 11px; }
+      .comment__block .box__text .subtitle {
+        font-size: 14px;
+        color: #646464;
+        font-family: 'Museo Sans Cyrl 300', sans-serif; }
+      .comment__block .box__text .text {
+        font-family: 'Museo Sans Cyrl 300', sans-serif;
+        font-size: 16px;
+        margin-top: 19px; }
+
+/*# sourceMappingURL=comment.css.map */

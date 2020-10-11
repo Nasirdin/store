@@ -1,0 +1,29 @@
+.about {
+  padding: 71px 0 95px;
+  text-align: center;
+  background-color: #F6F6F6; }
+  .about__title {
+    font-size: 30px;
+    margin-bottom: 65px; }
+  .about .block1 {
+    display: flex;
+    justify-content: flex-start; }
+  .about .block2 {
+    display: flex;
+    justify-content: center; }
+  .about .block3 {
+    display: flex;
+    justify-content: flex-end; }
+  .about__block {
+    width: 246px; }
+    .about__block img {
+      margin-bottom: 38px; }
+    .about__block_title {
+      margin-bottom: 25px; }
+    .about__block .text {
+      font-size: 14px; }
+      .about__block .text span {
+        color: #C70101;
+        text-decoration: underline; }
+
+/*# sourceMappingURL=about.css.map */

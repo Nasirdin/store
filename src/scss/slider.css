@@ -1,0 +1,28 @@
+.slider {
+  padding: 108px 0 108px; }
+  .slider #slider {
+    position: relative;
+    width: 750px;
+    margin: 0 auto; }
+    .slider #slider .owl-nav .customNextBtn {
+      position: absolute;
+      top: 50%;
+      right: -88px;
+      transform: translateY(-50%);
+      opacity: 0.5;
+      transition: .5s; }
+      .slider #slider .owl-nav .customNextBtn:hover {
+        opacity: 1; }
+    .slider #slider .owl-nav .customPrevBtn {
+      position: absolute;
+      top: 50%;
+      left: -88px;
+      transform: translateY(-50%);
+      opacity: 0.5;
+      transition: .5s; }
+      .slider #slider .owl-nav .customPrevBtn:hover {
+        opacity: 1; }
+    .slider #slider .owl-dots {
+      display: none; }
+
+/*# sourceMappingURL=slider.css.map */

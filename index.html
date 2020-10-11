@@ -23,12 +23,12 @@
             </div>
             <div class="tel">
                 <a href="#" class="tel__nummber">+7 (499) 922-89-74</a>
-                <a href="#" class="tel__button">заказать звонок</a>
+                <a href="#" id="call" class="tel__button">заказать звонок</a>
             </div>
         </nav>
     </div>
 </header>
-<section class="home">
+<section class="home" id="home">
     <div class="container">
         <h1 class="home__title">Подбор пульсометра</h1>
         <h2 class="home__subtitle">с учётом Вашего уровня подготовки</h2>
@@ -55,8 +55,8 @@
                 </div>
             </div>
         </div>
-        <button class="home__btn">заказать кОНСУЛЬТАЦИЮ</button>
-        <p class="more">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></p>
+        <button id="consultation" class="home__btn">заказать кОНСУЛЬТАЦИЮ</button>
+        <p class="more">или <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a></p>
     </div>
 </section>
 <section class="about">
@@ -94,13 +94,19 @@
     <div class="container">
         <h2 class="consultation__title">Получите бесплатную консультацию<br>по подбору пульсометра</h2>
         <form action="#" class="form">
-            <p class="form__text">Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</p>
+            <p class="form__text">Просто заполните форму заявки<br>
+                и мы перезвоним вам в течении 10 минут</p>
             <label>
                 <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Ваш телефон" required>
-                <input type="email" placeholder="Ваш E-mail" required>
-                <input type="submit" value="заказать кОНСУЛЬТАЦИЮ">
             </label>
+            <label>
+                <input type="tel" placeholder="Ваш телефон" required>
+            </label>
+            <label>
+                <input type="email" placeholder="Ваш E-mail" required>
+            </label>
+            <button>заказать кОНСУЛЬТАЦИЮ</button>
+
         </form>
     </div>
 </section>
@@ -122,7 +128,7 @@
         </div>
     </div>
 </section>
-<section class="catalog">
+<section id="catalog" class="catalog">
     <div class="container">
         <h2 class="catalog__title">
             Каталог пульсометров
@@ -182,7 +188,7 @@
                             <div class="content-box__wrapper">
                                 <div class="content-box__content">
                                     <img src="./src/img/tab/puls.png" alt="">
-                                    <h3 class="title">Пульсометр Polar FT1 </h3>
+                                    <h3 class="title">Пульсометр Polar FT2 </h3>
                                     <p class="decrpt">Для первых шагов в тренировках, основанных на сердечном ритме
                                     </p>
                                     <a href="#" class="more-about">Подробнее</a>
@@ -218,7 +224,7 @@
                             <div class="content-box__wrapper">
                                 <div class="content-box__content">
                                     <img src="./src/img/tab/puls.png" alt="">
-                                    <h3 class="title">Пульсометр Polar FT1 </h3>
+                                    <h3 class="title">Пульсометр MonoFit FT3 </h3>
                                     <p class="decrpt">Для первых шагов в тренировках, основанных на сердечном ритме
                                     </p>
                                     <a href="#" class="more-about">Подробнее</a>
@@ -254,7 +260,7 @@
                             <div class="content-box__wrapper">
                                 <div class="content-box__content">
                                     <img src="./src/img/tab/puls.png" alt="">
-                                    <h3 class="title">Пульсометр Polar FT1 </h3>
+                                    <h3 class="title">Пульсометр Polar MB7 </h3>
                                     <p class="decrpt">Для первых шагов в тренировках, основанных на сердечном ритме
                                     </p>
                                     <a href="#" class="more-about">Подробнее</a>
@@ -754,8 +760,69 @@
         </div>
     </div>
 </footer>
+
+<div class="overlay">
+    <div class="modal-call">
+        <form action="#" class="form">
+            <p class="form__text">Просто заполните форму заявки</p>
+            <p class="form__subTitle">и мы перезвоним вам в течении 10 минут</p>
+            <label>
+                <input type="text" placeholder="Ваше имя" required>
+            </label>
+            <label>
+                <input type="tel" placeholder="Ваш телефон" required>
+            </label>
+            <label>
+                <input type="email" placeholder="Ваш E-mail" required>
+            </label>
+            <button class="btn-con">заказать звонок</button>
+        </form>
+        <span class="close-modal"></span>
+    </div>
+    <div class="modal">
+    <form action="#" class="form">
+        <p class="form__text">Просто заполните форму заявки</p>
+        <p class="form__subTitle">и мы перезвоним вам в течении 10 минут</p>
+        <label>
+            <input type="text" placeholder="Ваше имя" required>
+        </label>
+        <label>
+            <input type="tel" placeholder="Ваш телефон" required>
+        </label>
+        <label>
+            <input type="email" placeholder="Ваш E-mail" required>
+        </label>
+        <button>заказать кОНСУЛЬТАЦИЮ</button>
+    </form>
+    <span class="close-modal"></span>
+</div>
+    <div class="buy-modal">
+        <form action="#" class="form">
+            <p class="form__text">Вы выбрали часы</p>
+            <p class="form__subTitle"></p>
+            <label>
+                <input type="text" placeholder="Ваше имя" required>
+            </label>
+            <label>
+                <input type="tel" placeholder="Ваш телефон" required>
+            </label>
+            <label>
+                <input type="email" placeholder="Ваш E-mail" required>
+            </label>
+            <button>заказать товар</button>
+        </form>
+        <span class="close-modal"></span>
+    </div>
+</div>
+<div class="btn-up">
+    <a href="#home">
+        <img src="./src/img/btn-up.svg" alt="btn-up">
+    </a>
+</div>
+
 <script src="./src/js/jquery.js"></script>
 <script src="./src/js/owl.carousel.min.js"></script>
+<script src="./src/js/jquery.maskedinput.min.js"></script>
 <script src="./src/js/script.js"></script>
 </body>
 </html>

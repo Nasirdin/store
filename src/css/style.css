@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -167,17 +168,17 @@ body {
   text-transform: uppercase;
   margin-bottom: 80px;
 }
+.consultation .form {
+  display: flex;
+  flex-direction: column;
+}
 .consultation .form__text {
   color: #fff;
   font-size: 20px;
   font-family: "Museo Sans Cyrl 500", sans-serif;
   margin-bottom: 35px;
 }
-.consultation .form label {
-  display: flex;
-  flex-direction: column;
-}
-.consultation .form label input {
+.consultation .form input {
   width: 301px;
   height: 51px;
   background-color: #fff;
@@ -187,14 +188,20 @@ body {
   padding: 0 15px;
   margin-bottom: 14px;
 }
-.consultation .form label input:last-child {
+.consultation .form button {
   background-color: #C70101;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 0;
   transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  width: 301px;
+  height: 51px;
+  border: none;
+  border-radius: 4px;
 }
-.consultation .form label input:last-child:hover {
+.consultation .form button:hover {
   background-color: #fff;
   color: #9c9c9c;
 }
@@ -481,4 +488,148 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*# sourceMappingURL=style.css.map */
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+.overlay .modal, .overlay .modal-call {
+  position: absolute;
+  width: 390px;
+  height: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #bcbcbc;
+  padding: 45px;
+  display: none;
+}
+.overlay .modal .close-modal, .overlay .modal-call .close-modal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -40px;
+  cursor: pointer;
+}
+.overlay .modal .close-modal:before, .overlay .modal-call .close-modal:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #ff0309;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.overlay .modal .close-modal:after, .overlay .modal-call .close-modal:after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #ff0309;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.overlay .buy-modal {
+  position: absolute;
+  width: 390px;
+  height: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #bcbcbc;
+  padding: 45px;
+  display: none;
+}
+.overlay .buy-modal .close-modal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -40px;
+  cursor: pointer;
+}
+.overlay .buy-modal .close-modal:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #ff0309;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.overlay .buy-modal .close-modal:after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #ff0309;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.overlay .form {
+  display: flex;
+  flex-direction: column;
+}
+.overlay .form__text {
+  font-size: 19px;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+}
+.overlay .form__subTitle {
+  font-size: 14px;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  margin-bottom: 35px;
+}
+.overlay .form input {
+  width: 301px;
+  height: 51px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 15px;
+  margin-bottom: 14px;
+}
+.overlay .form button {
+  background-color: #C70101;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  width: 301px;
+  height: 51px;
+  border: none;
+  border-radius: 4px;
+}
+.overlay .form button:hover {
+  background-color: #fff;
+  color: #9c9c9c;
+}
+
+.btn-up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  display: none;
+}
+.btn-up img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

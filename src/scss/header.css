@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  position: absolute; }
+  .header-nav {
+    padding: 21px 0 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff; }
+    .header-nav .text__title {
+      font-size: 12px;
+      margin-bottom: 12px; }
+    .header-nav .text__subtitle {
+      font-size: 18px; }
+    .header-nav .tel {
+      display: flex;
+      flex-direction: column; }
+      .header-nav .tel__nummber {
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 7px;
+        transition: .5s; }
+        .header-nav .tel__nummber:hover {
+          color: #C70101; }
+      .header-nav .tel__button {
+        padding: 10px 20px;
+        background-color: #C70101;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Museo Sans Cyrl 500', sans-serif;
+        transition: .5s; }
+        .header-nav .tel__button:hover {
+          color: #9c9c9c;
+          background-color: #fff; }
+
+/*# sourceMappingURL=header.css.map */
